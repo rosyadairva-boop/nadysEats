@@ -1,4 +1,3 @@
-# nadysEats
 # Nady'sEats
 
 Nady'sEats merupakan website sederhana yang dibuat sebagai media informasi dan pemesanan makanan serta minuman. Website ini memiliki beberapa halaman yang dapat digunakan untuk melihat menu, melakukan reservasi, melihat informasi tentang Nady'sEats, dan mengisi data pesanan.
