@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservasi - Nady's Eats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reservasi.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="beranda.html" class="logo">Nady'sEats</a>
+            <ul class="nav-menu">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservasi.html">Reservasi</a></li>
+                <li><a href="tentangKami.html">Tentang kami</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="nav-icon search-icon" aria-label="Cari">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <button class="nav-icon cart-icon" aria-label="Keranjang">
+                    <i class="bi bi-basket2-fill"></i>
+                    <span id="jumlahKeranjang">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="reservasi-header">
+            <h1>Buat Reservasi</h1>
+            <p>Pesan meja untuk momen spesialmu.</p>
+        </section>
+
+        <section class="reservasi-section">
+            <form class="reservasi-form" id="reservasiForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap :</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama lengkap" required>
+                    <label for="telepon">Nomor Telepon :</label>
+                    <input type="tel" id="telepon" placeholder="Masukkan nomor telepon" required>
+                    <label for="tanggal">Tanggal Reservasi :</label>
+                    <input type="date" id="tanggal" required>
+                    <label for="waktu">Waktu Reservasi :</label>
+                    <input type="time" id="waktu" required>
+                    <label for="jumlah">Jumlah Tamu :</label>
+                    <input type="number" id="jumlah" placeholder="Jumlah orang" min="1" required>
+                    <label for="catatan">Catatan (Opsional) :</label>
+                    <textarea id="catatan" placeholder="Contoh: meja dekat jendela"></textarea>
+                </div>
+                <button type="submit">Buat Reservasi</button>
+            </form>
+        </section>
+
+        <section class="bantuan">
+            <h2>Butuh Bantuan?</h2>
+            <p>Hubungi kami jika kamu memiliki pertanyaan tentang reservasi.</p>
+            <p>telp : 0895 - 4018 - 17090<br>email : hello@nadys-eats.com</p>
+        </section>
+
+    </main>
+    <footer>
+        <p>2026 Nadya’s Eats. All rights reserved.</p>
+    </footer>
+    <script src="reservasi.js"></script>
+
+</body>
+</html>

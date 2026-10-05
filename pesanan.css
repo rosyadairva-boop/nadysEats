@@ -1,0 +1,268 @@
+body {
+    background-color: #fbf5ec;
+    color: #33241f;
+    font-family: "DM Sans", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #33241f;
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.nav-menu a {
+    color: #33241f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-icon {
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-icon {
+    background-color: #f1e7db;
+    color: #33241f;
+}
+
+.search-icon:hover {
+    background-color: #e7d9c9;
+}
+
+.cart-icon {
+    background-color: #bd603e;
+    color: white;
+}
+
+.cart-icon:hover {
+    background-color: #a65032;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #33241f;
+    color: white;
+    border-radius: 50%;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.pesanan-header h1 {
+    color: #33241f;
+    font-family: "Playfair Display", serif;
+    font-size: 36px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.pesanan-header p {
+    color: #75655d;
+    font-size: 14px;
+    text-align: center;
+}
+
+.pesanan-kosong {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pesanan-box {
+    width: 90%;
+    max-width: 650px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.pesanan-box h2 {
+    color: #33241f;
+    font-family: "Playfair Display", serif;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.pesanan-box p {
+    color: #665850;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.pesanan-box a {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #bd603e;
+    color: white;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.pesanan-box a:hover {
+    background-color: #a85032;
+}
+
+.data-pemesan {
+    width: 90%;
+    max-width: 650px;
+    margin: 30px auto 50px;
+}
+
+.data-pemesan h2 {
+    color: #33241f;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #33241f;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 9px 11px;
+    border: 1px solid #dcc8b6;
+    border-radius: 7px;
+    background-color: #fbf7f1;
+    color: #33241f;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 55px;
+    resize: none;
+}
+.form-group input + label,
+.form-group textarea + label {
+    margin-top: 12px;
+}
+
+/* =========================
+   TOTAL PESANAN
+========================= */
+
+.total-pesanan {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    color: #33241f;
+    font-size: 12px;
+}
+
+.total-pesanan strong {
+    color: #bd603e;
+    font-size: 13px;
+}
+
+.data-pemesan button {
+    padding: 9px 18px;
+    border: none;
+    border-radius: 18px;
+    background-color: #bd603e;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.data-pemesan button:hover {
+    background-color: #a85032;
+}
+
+
+footer {
+    width: 100%;
+    padding: 22px 15px;
+    background-color: #ead5c2;
+    text-align: center;
+    margin-top: auto;
+}
+
+footer p {
+    color: #665850;
+    font-size: 13px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .pesanan-box,
+    .data-pemesan {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .pesanan-box,
+    .data-pemesan {
+        width: 100%;
+    }
+
+    .pesanan-box {
+        padding: 20px;
+    }
+}

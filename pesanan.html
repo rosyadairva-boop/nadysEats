@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan - Nady's Eats</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pesanan.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="beranda.html" class="logo">Nady'sEats</a>
+            <ul class="nav-menu">
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="reservasi.html">Reservasi</a></li>
+                <li><a href="tentangKami.html">Tentang kami</a></li>
+            </ul>
+            <div class="nav-icons">
+                <button class="nav-icon search-icon" aria-label="Cari">
+                    <i class="bi bi-search"></i>
+                </button>
+
+                <button class="nav-icon cart-icon" aria-label="Keranjang">
+                    <i class="bi bi-basket2-fill"></i>
+                    <span id="jumlahKeranjang">0</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pesanan-header">
+            <h1>Pesanan Kamu</h1>
+            <p>Cek kembali menu yang ingin kamu pesan.</p>
+        </section>
+
+        <section class="pesanan-kosong">
+            <div class="pesanan-box">
+                <h2>Belum ada pesanan</h2>
+                <p>Yuk pilih menu favoritmu terlebih dahulu.</p>
+                <a href="menu.html">Lihat menu</a>
+            </div>
+        </section>
+        <section class="data-pemesan">
+            <h2>Data Pemesan</h2>
+            <form id="pesananForm">
+                <div class="form-group">
+                    <label for="namaPemesan">Nama Lengkap :</label>
+                    <input type="text" id="namaPemesan" placeholder="Masukkan nama lengkap" required>
+                    <label for="teleponPemesan">Nomor Telepon :</label>
+                    <input type="tel" id="teleponPemesan" placeholder="Masukkan nomor telepon" required>
+                    <label for="catatanPesanan">Catatan (Opsional) :</label>
+                    <textarea id="catatanPesanan" placeholder="Contoh: tanpa pedas, tambah saus, dll."></textarea>
+                </div>
+            
+                <div class="total-pesanan">
+                    <p>Total Pesanan</p>
+                    <strong>Rp 0</strong>
+                </div>
+                <button type="submit">Konfirmasi Pesanan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Nady’s Eats. All rights reserved.</p>
+    </footer>
+    <script src="pesanan.js"></script>
+</body>
+</html>
